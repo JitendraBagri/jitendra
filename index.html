@@ -11,31 +11,32 @@
   </head>
   <body>
     <div class="top-container">
-      <img class="top-cloud" src="cloud.png" alt="">
+      <img class="top-cloud" src="cloud.png" alt="Cloud image">
       <div class="container2">
         <span class="text first-text">I'm a </span>
-        <span class="text sec-text"> Jitendra </span>
+        <span class="text sec-text">Jitendra</span>
       </div>
       <script> 
+        document.addEventListener("DOMContentLoaded", () => {
           const text = document.querySelector(".text.sec-text");
-          const textLoad =() =>{
-           
-            setTimeout(() => {
-              text.textContent = "Developer";
-            }, 4000);           
-            setTimeout(() => {
-              text.textContent = "Programmer";
-            }, 8000);            
+          const textLoad = () => {
+            setTimeout(() => { text.textContent = "Developer"; }, 0);
+            setTimeout(() => { text.textContent = "Programmer"; }, 4000);
           }
           textLoad();
           setInterval(textLoad, 12000);
+        });
       </script>
-      <img class="bottom-cloud" src="cloud.png" alt="">
-      <img src="mountain.png" alt="">
+      <img class="bottom-cloud" src="cloud.png" alt="Cloud image">
+      <img src="mountain.png" alt="Mountain image">
     </div>
+
     <div class="middle-container">
       <div class="profile">
-        <img class="image" src="image.png" alt="">
+        <img class="image" src="image.png" alt="Profile image">
+        <div class="container">
+          <p class="myname">Jitendra Singh Bagri</p>
+        </div>
         <h2>Hello.</h2>
         <p class="intro">Hi, I'm a programmer and front end developer. I love programming.</p>
         <a class="btn" href="Bagri.Jitendra2000.pdf" download="Jitendra resume.pdf">Download Resume</a>
@@ -44,12 +45,12 @@
       <div class="skills">
         <h2>My Skills.</h2>
         <div class="skill-row">
-          <img class="skill" src="computer.png" alt="">
+          <img class="skill" src="computer.png" alt="Computer icon">
           <h2>Programming Languages</h2>
-          <h3><p class="computer"> DATABASE – SQL, My programming languages are C, C++, and Python.</p></h3>
+          <p class="computer">DATABASE – SQL, My programming languages are C, C++, and Python.</p>
         </div>
         <div class="skill-row">
-          <img class="wdev" src="code.png" alt="">
+          <img class="wdev" src="code.png" alt="Web development icon">
           <div class="webdev">
             <h3>Web Development</h3>
             <p class="web-des">I'm a front end developer, using HTML/CSS, JavaScript. Developed websites using HTML/CSS.</p>
@@ -64,15 +65,16 @@
         <a class="btn" href="mailto:2002.jitendrabagri@gmail.com">Contact Me</a>
       </div>
     </div>
+
     <div class="social-icons">
       <ul>
-          <li><a href="https://www.linkedin.com/in/jitendra-singh-bagri-912a67175"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.facebook.com/Anupambagri1129"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com/NINJAanupam"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/anupam_bagri_03/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCxcvWiDXw9FyD-7IuP7Z6nQ"><i class="fa-brands fa-youtube"></i></a></li> 
-          <p> &copy; Jitendra 2024</p> 
+        <li><a href="https://www.linkedin.com/in/jitendra-singh-bagri-912a67175"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/Anupambagri1129"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/NINJAanupam"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/anupam_bagri_03/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCxcvWiDXw9FyD-7IuP7Z6nQ"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
+      <p>&copy; Jitendra 2024</p>
     </div>
   </body>
 </html>
