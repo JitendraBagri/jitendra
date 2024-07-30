@@ -275,4 +275,8 @@ hr{
   background-color: #1400f1;
 }
 
-
+.myname {
+  font-size: 20px; /* Change font size as needed */
+  font-family: Arial, sans-serif; /* Change font style */
+  color: rgb(255, 255, 255); /* Change color */
+}
