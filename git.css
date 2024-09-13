@@ -1,0 +1,75 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ff9800, #f44336, #2196f3, #00bcd4);
+    background-size: 400% 400%;
+    animation: backgroundShift 10s ease infinite;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Keyframe animation for the background */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container styling */
+.top-container, .middle-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Styling for the text */
+.text {
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 20px 0;
+    color: #ffffff;
+    background: linear-gradient(135deg, #333333, #000000);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background: #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px;
+    font-size: small;
+    color: #ffffff;
+}
