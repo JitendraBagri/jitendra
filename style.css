@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ff9800, #e45555, #2196f3, #00bcd4);
+  background: linear-gradient(135deg, #ff9800, #f44336, #2196f3, #00bcd4);
   background-size: 400% 400%;
   animation: backgroundShift 10s ease infinite;
   text-align: center;
@@ -133,13 +132,8 @@ hr {
   height: 120px;
   margin: auto;
   background: linear-gradient(135deg, #08bd1a00, #e4555500, #2195f300, #00bbd400);
-  border-radius: 50%;
   animation: animatedGradient 3s linear infinite;
- 
-  
 }
-
-
 
 @keyframes animatedGradient {
   100% { background-position: left bottom; }
@@ -214,6 +208,14 @@ hr {
 }
 
 .social-icons ul li a:hover {
+  margin: 0px;
+  padding: 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  border-radius: 10px;
+  text-align: center;
   background-color: #d41763;
   color: #ffffff;
 }
@@ -257,4 +259,56 @@ hr {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+}
+
+/* Media Query for smaller screens (Mobile devices) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Increase base font size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 1rem; /* Increase paragraph font size */
+    line-height: 1.6; /* Adjust line height */
+  }
+
+  .container2 .text {
+    font-size: 24px; /* Adjust text size */
+  }
+
+  .intro {
+    width: 90%; /* Adjust container width */
+  }
+
+  .btn {
+    font-size: 14px; /* Adjust button text size */
+    padding: 10px 24px; /* Adjust button padding */
+  }
+
+  a {
+    font-size: 1.2rem; /* Adjust link size */
+  }
+
+  .Touch {
+    font-size: 1.2rem; /* Adjust "Get in Touch" text */
+  }
+
+  .social-icons ul li {
+    width: 50px;
+    height: 50px;
+    font-size: 30px; /* Adjust social icon sizes */
+  }
+
+  .image {
+    width: 100px;
+    height: 100px; /* Adjust profile image size */
+  }
 }
