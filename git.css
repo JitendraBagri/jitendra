@@ -58,6 +58,9 @@ body {
 }
 
 .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
   margin-top: 20px;
 }
 
@@ -71,6 +74,20 @@ body {
   font-size: 16px;
   font-weight: 500;
   transition: background 0.3s ease;
+}
+.download-btn{
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4818f5;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.get-code-btn:hover, .download-btn:hover {
+  background: #37ab01;
 }
 
 .get-code-btn:hover {
