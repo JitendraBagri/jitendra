@@ -127,12 +127,12 @@ hr {
 .image {
   display: inline-block;
   padding: 8px;
-  border-radius: 50%;
+  border-radius: 35%;
   width: 120px;
   height: 120px;
   margin: auto;
-  background: linear-gradient(135deg, #08bd1a00, #e4555500, #2195f300, #00bbd400);
-  animation: animatedGradient 3s linear infinite;
+  background: linear-gradient(135deg, #08bd1a, #e45555, #2195f3, #00bbd4);
+  animation: animatedGradient 2s linear infinite;
 }
 
 @keyframes animatedGradient {
