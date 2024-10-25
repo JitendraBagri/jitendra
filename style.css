@@ -260,6 +260,12 @@ hr {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
+.contact-info-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+}
 
 /* Media Query for smaller screens (Mobile devices) */
 @media only screen and (max-width: 768px) {
