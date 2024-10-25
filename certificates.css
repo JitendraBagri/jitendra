@@ -1,0 +1,213 @@
+/* Certificates Page Styles */
+body {
+    background: linear-gradient(45deg, #4CAF50, #2E8B57, #1E90FF, #FF6347);
+    background-size: 400% 400%;
+    animation: gradient-background 10s ease infinite;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font */
+    text-align: center;
+  }
+  
+  @keyframes gradient-background {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  .certificates-container {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .certificates-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: #fff; }
+    50% { color: #ffeb3b; }
+    100% { color: #fff; }
+  }
+  
+  .certificate-item {
+    display: flex;
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center the items */
+    justify-content: center; /* Center vertically */
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certificate-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .certificate-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .certificate-item:hover img {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  
+  .certificate-info {
+    margin-top: 15px; /* Space above text */
+    text-align: left;
+    color: #ddd;
+  }
+  
+  .certificate-info h3 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .certificate-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  /* Back Button Styles */
+  .footer {
+    margin-top: 50px;
+    font-size: small;
+    color: #ffffff;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px;
+  
+    
+  }
+  .btn {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 20px 0;
+    color: #ffffff;
+    background: linear-gradient(135deg, #333333, #000000);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .certificate-item {
+      flex-direction: row; /* Horizontal layout on larger screens */
+      justify-content: space-between; /* Space between items */
+    }
+  
+    .certificate-info {
+      margin-left: 20px; /* Space between image and text */
+      text-align: left; /* Align text to left */
+    }
+  
+    .certificate-item img {
+      max-width: 180px; /* Fixed image size for larger screens */
+    }
+  
+    .certificates-container h1 {
+      font-size: 3em; /* Larger title on bigger screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .certificates-container h1 {
+      font-size: 2em; /* Smaller title on mobile screens */
+    }
+  
+    .certificate-info h3 {
+      font-size: 1.5em; /* Smaller subtitle on mobile */
+    }
+  
+    .certificate-info p {
+      font-size: 1em; /* Smaller paragraph text on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .back-button-container .btn {
+      width: 100%; /* Full-width button on small screens */
+      padding: 15px; /* Adjust padding for small screens */
+    }
+  }
+  /* Existing CSS remains the same... */
+
+/* Modal Styles */
+/* Existing CSS remains the same... */
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Set a maximum width for the modal content */
+  }
+  
+  .modal-content img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+ 
+ 

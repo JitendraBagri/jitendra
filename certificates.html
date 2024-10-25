@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates and Training - Jitendra</title>
+  <link rel="stylesheet" href="certificates.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <div class="certificates-container">
+    <h1>Certificates and Training</h1>
+
+    <!-- Data Science Internship Certificate -->
+    <div class="certificate-item">
+      <a href="#" onclick="openModal('dataScienceModal')">
+        <img src="data_science_internship.png" alt="Data Science Internship Certificate">
+      </a>
+      <div class="certificate-info">
+        <h3>Data Science Internship</h3>
+        <p><strong>Organization:</strong> Unified Mentor Pvt Ltd</p>
+        <p><strong>Duration:</strong> 1 Month</p>
+        <p><strong>Date:</strong> 01st October 2024</p>
+        <p><strong>Description:</strong> Successfully completed a Data Science Internship, where I gained practical experience in data analysis, machine learning, and statistical modeling.</p>
+      </div>
+    </div>
+
+    <!-- Artificial Intelligence Internship Certificate -->
+    <div class="certificate-item">
+      <a href="#" onclick="openModal('aiModal')">
+        <img src="ai_internship.png" alt="Artificial Intelligence Internship Certificate">
+      </a>
+      <div class="certificate-info">
+        <h3>Artificial Intelligence Internship</h3>
+        <p><strong>Organization:</strong> Internship Studio</p>
+        <p><strong>Date:</strong> 01st August 2024</p>
+        <p><strong>Duration:</strong> 1 Month</p>
+        <p><strong>Description:</strong> Completed an AI Internship focused on building intelligent algorithms, working with neural networks, and developing AI-powered applications.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered Back to Home Button -->
+  <div class="footer">
+    <a class="btn" href="index.html">Return to Home</a>
+   
+</div>
+
+  <!-- Modal for Data Science Certificate -->
+  <div id="dataScienceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('dataScienceModal')">&times;</span>
+      <h2>Data Science Internship Certificate</h2>
+      <img src="data_science_internship.png" alt="Data Science Internship Certificate">
+      <p>Click <a href="data_science_internship.png" target="_blank">here</a> to view full-size certificate.</p>
+    </div>
+  </div>
+
+  <!-- Modal for AI Certificate -->
+  <div id="aiModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('aiModal')">&times;</span>
+      <h2>Artificial Intelligence Internship Certificate</h2>
+      <img src="ai_internship.png" alt="Artificial Intelligence Internship Certificate">
+      <p>Click <a href="ai_internship.png" target="_blank">here</a> to view full-size certificate.</p>
+      <img src="ai_internship2.png" alt="Artificial Intelligence Internship Certificate">
+      <p>Click <a href="ai_internship2.png" target="_blank">here</a> to view full-size certificate.</p>
+      
+      
+    </div>
+    
+  </div>
+
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+  </script>
+</body>
+</html>
