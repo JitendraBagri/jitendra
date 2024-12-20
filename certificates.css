@@ -13,10 +13,10 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-  
+
   
   .certificates-container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -117,6 +117,7 @@ body {
     background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
+    transition: all 0.3s ease;
   }
   
   
