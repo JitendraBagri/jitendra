@@ -64,6 +64,21 @@ h2 {
   padding: 10px 0;
   text-shadow: 1px 1px 15px rgba(56, 201, 238, 0.8);
 }
+.AWS_h2{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #00ff15;
+  font-weight: 600;
+  padding: 15px 0;
+  text-shadow: 1px 1px 15px rgba(212, 84, 4, 0.8);
+}
+.AWS{
+ 
+
+  color: #ffffff;
+ 
+ 
+}
 
 h3 {
   color: #eba817;
